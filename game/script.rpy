@@ -3,7 +3,14 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
+#images
+image de = "devon_test.png"
+
+#backgrounds
+image bg_intro = "bg_intro.jpg"
+
+#characters
+define de = Character("Devon")
 
 
 # The game starts here.
@@ -14,20 +21,35 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    scene bg_intro
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show eileen happy
+    show de
 
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
-
+    de "Hey! I see you downloaded the repository and figured out how to add it to Ren'Py!"
+    de "Who am I talking to here?"
+    
+    menu:
+        "Troy":
+            de "Oh yeah, you're the project manager right?"
+        "Dev":
+            de "Oh, you're the coder."
+        "George":
+            de "The writer. How's the story coming along?"
+        "Shaina":
+            de "The muscian! Start on anything yet?"
+    
+    de "Anyways..."
+    de "This was just a test run."
+    de "I made this avatar of me using some software I got a while ago."
+    de "(They don't have male avatar's yet.)"
+    de "But really, I just made this as a start."
+    de "Start looking at Ren'Py's documentation and well get stuff started."
+    de "Talk to you soon!"
+    
     return
