@@ -1,0 +1,21 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 43, in script
+    de "Oh yeah, you're the project manager right?"
+Exception: Sayer 'de' is not defined.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 43, in script
+    de "Oh yeah, you're the project manager right?"
+  File "C:\Users\Mr\Downloads\renpy-6.99.14-sdk\renpy\ast.py", line 615, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\Mr\Downloads\renpy-6.99.14-sdk\renpy\ast.py", line 528, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
+Exception: Sayer 'de' is not defined.
+
+Windows-8-6.2.9200
+Ren'Py 6.99.14.3135
+PROJECT-MSNY 1.0
